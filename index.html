@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Crime Timeline Reconstructor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Digital Crime Timeline 🔍</h1>
+</header>
+
+<div class="container">
+  <div class="form-section">
+    <h2>Add Evidence</h2>
+    <select id="type">
+      <option value="Call Log">Call Log</option>
+      <option value="CCTV">CCTV</option>
+      <option value="GPS">GPS</option>
+      <option value="Message">Message</option>
+    </select>
+
+    <input type="time" id="time">
+    <input type="text" id="desc" placeholder="Event description">
+
+    <button id="addBtn">Add Evidence</button>
+  </div>
+
+  <div class="timeline-section">
+    <h2>Timeline</h2>
+    <div id="timeline" class="timeline"></div>
+
+    <h2>Suspicious Findings</h2>
+    <div id="suspicious" class="suspicious"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
