@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Crime Timeline Reconstructor</title>
+<title>Digital Crime Dashboard 🔍</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Digital Crime Timeline 🔍</h1>
+  <h1>Digital Crime Timeline Dashboard</h1>
 </header>
 
 <div class="container">
+
   <div class="form-section">
     <h2>Add Evidence</h2>
     <select id="type">
@@ -25,7 +26,8 @@
     <input type="time" id="time">
     <input type="text" id="desc" placeholder="Event description">
 
-    <button id="addBtn">Add Evidence</button>
+    <button id="addBtn">Add Event</button>
+    <button id="exportBtn">Export PDF</button>
   </div>
 
   <div class="timeline-section">
@@ -35,8 +37,13 @@
     <h2>Suspicious Findings</h2>
     <div id="suspicious" class="suspicious"></div>
   </div>
+
 </div>
 
+<!-- Include html2pdf library for PDF export -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
+
+
